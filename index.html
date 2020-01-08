@@ -1,50 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JavaScript Projectje</title>
+    <title>Model Maker</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
 </head>
-<body onload="startGame()">
-<script>
+<body>
 
-function startGame() {
-    myGameArea.start();
-    myGamePiece = new component(30, 70, "red", 10, 120);
-}
-
-function updateGame() {
-	component.newPos();
-}
-
-function component(width, height, color, x, y) {
-	this.width = width;
-	this.height = height;
-	this.speedX;
-	this.speedY;
-	this.x = x;
-	this.y = y;
-	ctx = myGameArea.context;
-	ctx.fillStyle = color;
-	ctx.fillRect(this.x, this.y, this.width, this.height);
-	this.newPos = function() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-  }
-}
-
-var myGameArea = {
-    canvas : document.createElement("canvas"),
-    start : function() {
-        this.canvas.width = 800;
-        this.canvas.height = 600;
-        this.canvas.style.backgroundColor = "black";
-        this.context = this.canvas.getContext("2d");
-        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
-        this.frameNo = 0;
-    },
-    clear : function() {
-        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-    }
-}
-</script>
 </body>
 </html>
