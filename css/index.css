@@ -1,3 +1,59 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	background-color: black;
+	font-family: 'Source Code Pro', monospace;
+	height: 100%;
 }
+
+.header {
+	border-bottom: 2px dashed white;
+	height: 50px;
+	padding: 5px;
+}
+	
+	.header h1, .headerText {
+		margin: 0px;
+		color: white;
+		height: auto;	
+		float: left;
+	}
+
+	.headerText {
+		margin-top: 16px;
+		margin-left: 7px;
+		color: grey;
+	}
+
+.content {
+	height: 100%;
+	width: 100%;
+}
+
+	.tableCard {
+		display: inline-block;
+		height: calc(33% - 10px);
+		width: calc(15% - 10px);
+		margin: 10px;
+	}
+
+	.addButton {
+		color: white;
+		padding: 15px;
+		border: 1px solid white;
+		border-radius: 2px;
+		text-align: center;
+		margin-left: calc(50% - 50px);
+		margin-top: calc(50% - 50px);
+		width: 25px;
+		height: 25px;
+	}
+
